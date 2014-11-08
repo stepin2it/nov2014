@@ -1,0 +1,13 @@
+Class Project Requirements Gathering 
+------------------------------------
+
+Stories 
+    - User should be able to launch the application
+    
+    - User should land on main screen of the application
+
+    - User should be able to browse data on the main screen
+
+    - User should be able to exit the application
+
+
