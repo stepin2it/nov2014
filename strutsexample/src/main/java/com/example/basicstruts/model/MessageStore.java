@@ -1,0 +1,24 @@
+package com.example.basicstruts.model;
+
+public class MessageStore implements java.io.Serializable{
+    private String message;
+    
+    public MessageStore() {
+         
+        setMessage("Hi From MessageStore");
+    }
+ 
+    public String getMessage() {
+ 
+        return message;
+        
+        
+        
+    }
+ 
+    public void setMessage(String message) {
+ 
+        this.message = message;
+    }
+ 
+}
