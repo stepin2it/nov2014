@@ -1,0 +1,5 @@
+http://javahonk.com/struts-2-maven-hello-world/
+
+http://www.tutorialspoint.com/struts_2/struts_quick_guide.htm
+
+http://stackoverflow.com/questions/7715260/java-compiler-level-does-not-match-the-version-of-the-installed-java-project-fac

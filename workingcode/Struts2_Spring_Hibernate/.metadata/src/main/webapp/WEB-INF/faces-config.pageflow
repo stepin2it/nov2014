@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14170345364520" configfile="/Struts2_Spring_Hibernate/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="36" y="12" id="pf14170597326531" outlinks="pf14170597326532" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcome.xhtml" x="192" y="96" id="pf14170597326533" inlinks="pf14170597326532" path="/welcome.xhtml"/>
+  <links id="pf14170597326532" target="pf14170597326533" source="pf14170597326531" outcome="login"/>
+</pageflow:Pageflow>
