@@ -9,5 +9,9 @@
 			<beans-config><![CDATA[1:BeansModel|2:mavenapplication|3:src/main/webapp/WEB-INF/webflow-config.xml]]></beans-config>
 			<beans-config><![CDATA[1:BeansModel|2:mavenapplication|3:src/main/webapp/WEB-INF/datasource-config.xml]]></beans-config>
 		</config>
+		<config>
+			<file>src/main/webapp/WEB-INF/flows/main-flow2.xml</file>
+			<name><![CDATA[main-flow2]]></name>
+		</config>
 	</configs>
 </webflow-project-description>
