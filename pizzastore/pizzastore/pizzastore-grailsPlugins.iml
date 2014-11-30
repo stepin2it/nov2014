@@ -6,6 +6,8 @@
         <webroots>
           <root url="file://$MODULE_DIR$/target/work/plugins/database-migration-1.4.0/grails-app/views" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/jquery-1.11.1/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/target/work/plugins/blueprint-1.0.2/web-app" relative="/" />
+          <root url="file://$MODULE_DIR$/target/work/plugins/shiro-1.2.1/web-app" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -24,6 +26,10 @@
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/asset-pipeline-1.9.9/grails-app/controllers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/asset-pipeline-1.9.9/grails-app/services" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/asset-pipeline-1.9.9/grails-app/taglib" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/target/work/plugins/blueprint-1.0.2">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/blueprint-1.0.2/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/blueprint-1.0.2/grails-app/taglib" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/cache-1.1.8">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/cache-1.1.8/src/java" isTestSource="false" />
@@ -46,6 +52,13 @@
     <content url="file://$MODULE_DIR$/target/work/plugins/scaffolding-2.1.2">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/scaffolding-2.1.2/src/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/scaffolding-2.1.2/src/groovy" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/target/work/plugins/shiro-1.2.1">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/shiro-1.2.1/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/shiro-1.2.1/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/shiro-1.2.1/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/shiro-1.2.1/grails-app/services" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/shiro-1.2.1/grails-app/taglib" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.55">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/tomcat-7.0.55/src/java" isTestSource="false" />
@@ -90,6 +103,13 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.29/mysql-connector-java-5.1.29.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-ehcache/1.2.2/shiro-ehcache-1.2.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-spring/1.2.2/shiro-spring-1.2.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.2.2/shiro-web-1.2.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/opensymphony/quartz/quartz/1.6.1/quartz-1.6.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-quartz/1.2.2/shiro-quartz-1.2.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

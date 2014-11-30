@@ -2,5 +2,5 @@ package pizzastore
 
 class TagController {
 
-    def scaffold = true
+    static scaffold = true
 }

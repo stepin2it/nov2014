@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<!-- <meta http-equiv="Refresh" content="0; URL=app/main" /> -->
+<meta http-equiv="Refresh" content="0; URL=app/main" />
 </head>
 <body>
 <p>Hello</p>

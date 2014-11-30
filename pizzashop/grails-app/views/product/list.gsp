@@ -23,8 +23,9 @@
         <dt>Show</dt>
         <dd>
             <ul>
+            <li><g:link controller="product" action="list">All</g:link> </li>
                 <g:each in="${tags}" var="tag">
-                    <li>${tag.name}</li>
+                    <li><g:link controller="product" action="listfiltered">${tag.name}</g:link></li>
                 </g:each>
             </ul>
         </dd>

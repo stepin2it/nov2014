@@ -1,3 +1,4 @@
+import org.apache.shiro.crypto.hash.Sha256Hash
 import pizzastore.Product
 import pizzastore.Tag
 
@@ -13,13 +14,17 @@ class BootStrap {
     */
     def init = { servletContext ->
 
-        def tomatoTag = new Tag(name: 'Tomato').save()
-        def mushroomTag = new Tag(name: 'Mushroom').save()
+        def tag1 = new Tag(name: 'Cilantro', description: 'Cilantro').save()
+        def tag2 = new Tag(name: 'Celery', description: 'Celery').save()
 
-        def tomatoPizza = new Product(name: 'Tomato Pizza', description: 'Pizza with tomato topping ', status: "Available").save()
-        // tomatoPizza.addToTags(tomatoTag)
-        def mushroomPizza = new Product(name: 'Mushroom Pizza', description: 'Pizza with mushroom topping ', status: "Available").save()
-        // mushroomPizza.addToTags(mushroomTag)
+        def pizza1 = new Product(name: 'Cilantro Pizza', description: 'Pizza with cilantro topping ', status: "Available").save()
+        pizza1.addToTags(tag1)
+        def pizza2 = new Product(name: 'Celery Pizza', description: 'Pizza with celery topping ', status: "Available").save()
+        pizza2.addToTags(tag2)
+
+        def user = new ShiroUser(username: "user123", passwordHash: new Sha256Hash("password").toHex())
+        user.addToPermissions("*:*")
+        user.save()
 
     }
 

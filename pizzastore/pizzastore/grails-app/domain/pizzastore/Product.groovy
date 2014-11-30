@@ -22,7 +22,7 @@ class Product {
         name blank :  false, unique: true
         description  blank: false, maxSize: 1000
         price nullable: true
-        status inList: ["Available", "Unavailable"]
+        status inList: ["Available", "Unavailable", "Premium"]
 
 
     }

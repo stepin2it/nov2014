@@ -10,6 +10,14 @@ class ProductController {
 
         return [products : products, tags : tags ]
     }
+
+    def listfiltered() {
+        def filteredproducts = Product.findAllByName("Celery", [sort: "name", order: "asc"])
+
+            return [filteredproducts : filteredproducts]
+
+    }
+
 }
 
 

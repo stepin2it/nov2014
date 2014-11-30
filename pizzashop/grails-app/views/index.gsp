@@ -84,8 +84,8 @@
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 
 		<div id="page-body" role="main">
-			<h1>Welcome to Pizza Shop</h1>
-			<p>Start shopping for pizza</p>
+			<h1>Welcome to Pizza Shop admin</h1>
+			<p>Back office for Pizza Shop</p>
 
 			<div id="controller-list" role="navigation">
 				<h2>Debug: </h2>

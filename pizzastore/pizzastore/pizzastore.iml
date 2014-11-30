@@ -105,6 +105,13 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.29/mysql-connector-java-5.1.29.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-ehcache/1.2.2/shiro-ehcache-1.2.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-spring/1.2.2/shiro-spring-1.2.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.2.2/shiro-web-1.2.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/opensymphony/quartz/quartz/1.6.1/quartz-1.6.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-quartz/1.2.2/shiro-quartz-1.2.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

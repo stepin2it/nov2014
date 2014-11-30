@@ -20,3 +20,8 @@ section > section { float:center; }
     background-color: #DDFF22;
 
 }
+.bottomcontainer {
+    float : bottom;
+    width: 1024px;
+    background-color: #EEDD11;
+}
