@@ -9,6 +9,8 @@ class Product {
     // add a static hasMany property
     // a Product can have many tags of type Tag
     static hasMany = [tags : Tag]
+    // static hasOne = [suborder : Suborder]
+    static belongsTo = Suborder
     // add static constraints property to specify constraints
     static constraints = {
         // name of the property, constraint name, value for the constraint
@@ -22,6 +24,10 @@ class Product {
 
 
     }
+    String toString() { return name }
+
+
+
 }
 
 
