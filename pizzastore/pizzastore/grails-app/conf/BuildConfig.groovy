@@ -5,8 +5,8 @@ grails.project.test.reports.dir = "target/test-reports"
 grails.project.work.dir = "target/work"
 grails.project.target.level = 1.6
 grails.project.source.level = 1.6
-grails.server.port.http = 9090
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
+grails.server.port.http = 9090
 
 grails.project.fork = [
     // configure settings for compilation JVM, note that if you alter the Groovy version forked compilation is required
@@ -45,6 +45,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo "http://repo.spring.io/milestone"
     }
 
     dependencies {
@@ -63,13 +64,15 @@ grails.project.dependency.resolution = {
         compile ':cache:1.1.8'
         compile ":asset-pipeline:1.9.9"
         compile ":blueprint:1.0.2"
-        compile ":shiro:1.2.1"
-
+        compile ":pretty-date:0.1"
+        compile ":breadcrumbs:0.5.2"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.6.1" // or ":hibernate:3.6.10.18"
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
+        runtime ":resources:1.2.13"
+
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"

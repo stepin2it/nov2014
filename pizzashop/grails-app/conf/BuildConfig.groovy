@@ -65,11 +65,16 @@ grails.project.dependency.resolution = {
         compile ":blueprint:1.0.2"
         compile ":pretty-date:0.1"
         compile ":breadcrumbs:0.5.2"
+        compile ":jquery-ui:1.10.4"
+        compile ":twitter-bootstrap:3.3.1"
+        compile ":spring-security-core:2.0-RC4"
+        // compile ":shiro:1.2.1"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.6.1" // or ":hibernate:3.6.10.18"
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
+        runtime ':twitter-bootstrap:3.3.1'
 
 
         // Uncomment these to enable additional asset-pipeline capabilities

@@ -2,5 +2,8 @@ package pizzastore
 
 class TagController {
 
-    static scaffold = true
+    def scaffold = true
+    def list() {
+
+    }
 }

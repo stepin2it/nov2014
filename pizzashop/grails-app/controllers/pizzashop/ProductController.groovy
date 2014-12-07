@@ -1,12 +1,14 @@
 package pizzashop
-
+import grails.plugin.springsecurity.annotation.Secured
 class ProductController {
 
     static scaffold = true
+    @Secured(['IS_AUTHENTICATED_ANONYMOUSLY'])
     def list() {
         def products = Product.findAllByStatus("Available", [sort: "name", order : "asc"])
 
         def suborders = Suborder.list(sort: "suborderNumber", order: "asc")
+
         def tags = Tag.list(sort: "name", order : "asc")
 
         String hello = printHelloWorld()
@@ -34,6 +36,16 @@ class ProductController {
         def product = Product.findById(id)
 
         [product : product]
+    }
+    def ajaxdetail(int id) {
+        if (id == null) {
+            redirect(action: 'list')
+        }
+
+        def product = Product.findById(id)
+
+        [product : product]
+
     }
 }
 

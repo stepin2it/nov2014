@@ -11,7 +11,7 @@
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
-grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
+grails.project.groupId = pizzastore // change this to alter the default package name and Maven publishing destination
 
 // The ACCEPT header will not be used for content negotiation for user agents containing the following strings (defaults to the 4 major rendering engines)
 grails.mime.disable.accept.header.userAgents = ['Gecko', 'WebKit', 'Presto', 'Trident']
@@ -85,9 +85,13 @@ grails.hibernate.pass.readonly = false
 // configure passing read-only to OSIV session by default, requires "singleSession = false" OSIV mode
 grails.hibernate.osiv.readonly = false
 
+breadcrumbs.selector="title"
+
+
 environments {
     development {
         grails.logging.jul.usebridge = true
+        grails.plugin.springsecurity.debug.useFilter = true
     }
     production {
         grails.logging.jul.usebridge = false
@@ -103,6 +107,8 @@ log4j.main = {
     //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
     //}
 
+    // info 'grails.plugin.springsecurity.web.filter.DebugFilter'
+
     error  'org.codehaus.groovy.grails.web.servlet',        // controllers
            'org.codehaus.groovy.grails.web.pages',          // GSP
            'org.codehaus.groovy.grails.web.sitemesh',       // layouts
@@ -115,3 +121,35 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
+// grails.plugin.springsecurity.rejectIfNoRule = false
+// grails.plugin.springsecurity.fii.rejectPublicInvocations = true
+
+
+// grails.plugins.springsecurity.successHandler.alwaysUseDefaultTargetUrl = false
+// grails.plugins.springsecurity.securityConfigType = "InterceptUrlMap"
+// grails.plugins.springsecurity.interceptUrlMap = [
+//         '/**': ["IS_AUTHENTICATED_ANONYMOUSLY"]
+// ]
+
+
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'pizzastore.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'pizzastore.UserRole'
+grails.plugin.springsecurity.authority.className = 'pizzastore.Role'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/home'
+grails.plugin.springsecurity.logout.postOnly = false
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                              ['permitAll'],
+	'/index':                         ['permitAll'],
+	'/index.gsp':                     ['permitAll'],
+	'/assets/**':                     ['permitAll'],
+	'/**/js/**':                      ['permitAll'],
+	'/**/css/**':                     ['permitAll'],
+	'/**/images/**':                  ['permitAll'],
+	'/**/favicon.ico':                ['permitAll']
+]
+

@@ -25,6 +25,8 @@ public class MainActivity extends Activity {
 	private List<String> mTestStrings = new ArrayList<String>();
 	private List<Product> mProductList = new ArrayList<Product>();
 
+    
+
 	private class DataLoadingTask extends AsyncTask<Integer, Integer, Integer> {
 		@Override
 		protected void onPreExecute() {
